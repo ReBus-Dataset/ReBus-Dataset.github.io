@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="YesBut: A High-Quality Annotated Multimodal Dataset for Evaluating Satire Comprehension Capability of Vision-Language Models">
+  <meta property="og:title" content="YesBut Dataset - Satire Comprehension with Vision-Language Models"/>
+  <meta property="og:description" content="YesBut introduces tasks for Satirical Image Detection, Understanding, and Completion, along with a dataset for evaluating Vision-Language models."/>
+  <meta property="og:url" content="https://github.com/abhi1nandy2/yesbut_dataset"/>
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+  <meta name="twitter:title" content="YesBut Dataset: Satire Comprehension in Vision-Language Models">
+  <meta name="twitter:description" content="A dataset of satirical and non-satirical images for evaluating Vision-Language models, with challenging tasks like Satirical Image Detection, Understanding, and Completion.">
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="keywords" content="satire, dataset, vision-language models, satire comprehension, humor detection, multimodal datasets">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>YesBut Dataset - Academic Project Page</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title"><span style="color: green;">Yes</span><span style="color: red;">But</span>: A High-Quality Annotated Multimodal Dataset for evaluating
+              Satire Comprehension capability of Vision-Language Models</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://sites.google.com/view/abhilashnandy" target="_blank">Abhilash Nandy</a>,</span>
+              <span class="author-block">
+                <a href="https://www.linkedin.com/in/yash-agarwal-579841119/?originalSubdomain=in" target="_blank">Yash Agarwal</a>,</span>
+              <span class="author-block">
+                <a href="https://www.linkedin.com/in/ashish-patwa-182b2b223/?originalSubdomain=in" target="_blank">Ashish Patwa</a>,</span>
+              <span class="author-block">
+                <a href="https://www.linkedin.com/in/millon-madhur/?originalSubdomain=in" target="_blank">Millon Madhur Das</a>,
+              <span class="author-block">
+                <a href="https://www.linkedin.com/in/18bansalaman/" target="_blank">Aman Bansal</a>,
+              <span class="author-block">
+                <a href="https://www.linkedin.com/in/ankytastic/" target="_blank">Ankit Raj</a>,
+              <span class="author-block">
+                  <a href="https://cse.iitkgp.ac.in/~pawang/" target="_blank">Pawan Goyal</a>,
+              </span>
+              <span class="author-block">
+                <a href="http://www.facweb.iitkgp.ac.in/~niloy/" target="_blank">Niloy Ganguly</a>              
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Indian Institute of Technology Kharagpur, University of Massachusetts Amherst,<br>Haldia Institute of Technology</span><br>
+              <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+            </div>
+
+            <h3 class="title is-3">EMNLP 2024 Long (Main)</h3>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2409.13592" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <p style="font-size:20px" class="ai ai-arxiv"></p>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                  </span>
+                
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://github.com/abhi1nandy2/yesbut_dataset" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <p style="font-size:20px" class="fab fa-github"></p>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <span class="link-block">
+                  <a href="https://huggingface.co/datasets/bansalaman18/yesbut" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <p style="font-size:20px">🤗</p>
+                    </span>
+                    <span>Dataset</span>
+                  </a>
+                </span>                
+
+                <span class="link-block">
+                  <a href="https://www.youtube.com/watch?v=S7zJis8rEbw&t=1s" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <p style="font-size:20px">▶</p>
+                    </span>
+                    <span>YouTube</span>
+                  </a>
+                </span>                                
+
+                
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Teaser video -->
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <!-- Twitter/X Embed 
+        <div style="display: flex; justify-content: center;">
+        <iframe border=0 frameborder=0 height=380 width=500 src="https://twitframe.com/show?url=https%3A%2F%2Ftwitter.com%2Fabhilash_nandy%2Fstatus%2F1837183220820943286"></iframe>
+        </div>
+        -->
+
+  
+        <!-- Subtitle -->
+        <h2 class="subtitle has-text-centered">
+          YesBut Dataset consists of 2547 images, 1084 satirical and 1463 non-satirical, containing different artistic styles. Each satirical image is posed in a “Yes, But” format, where the left half of the image depicts a normal scenario, while the right half depicts a conflicting scenario which is funny or ironic.
+        </h2>
+      </div>
+    </div>
+  
+    <!-- Ensure that the X embed script is loaded -->
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </section>
+  
+
+  <!-- Paper abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Understanding satire and humor is a challenging task for even current Vision-Language models. In this paper, we propose the challenging tasks of Satirical Image Detection (detecting whether an image is satirical), Understanding (generating the reason behind the image being satirical), and Completion (given one half of the image, selecting the other half from 2 given options, such that the complete image is satirical) and release a high-quality dataset YesBut, consisting of 2547 images, 1084 satirical and 1463 non-satirical, containing different artistic styles, to evaluate those tasks. Each satirical image in the dataset depicts a normal scenario, along with a conflicting scenario which is funny or ironic. Despite the success of current Vision-Language Models on multimodal tasks such as Visual QA and Image Captioning, our benchmarking experiments show that such models perform poorly on the proposed tasks on the YesBut Dataset in Zero-Shot Settings w.r.t both automated as well as human evaluation. Additionally, we release a dataset of 119 real, satirical photographs for further research.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- End paper abstract -->
+
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+
+
+      <div class="item">
+         <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
+           A Dataset Sample
+           </h2>
+         <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
+         <p>
+         This Figure shows an example image conveying satire. The irony in the image is that the person is messaging someone a very heartfelt message on the mobile, while sitting on a toilet seat!
+           <br><br>
+           <img src="static/images/20240101_174025.jpg"  alt="MY ALT TEXT" style="width: 50%; display: block; margin: auto;"/>
+         </p>
+         </h3>
+      </div>
+
+      <div class="item">
+         <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
+           YesBut Dataset Curation
+           </h2>
+         <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
+         <p>
+          Our annotation Pipeline for YesBut in 4 Stages- (1) Collecting Satirical Images from Social Media (2) Human Annotation of satirical images (3) Generating 2D stick images using DALL-E 3 and annotated descriptions (4) Generating 3D stick images using DALL-E 3 and annotated descriptions
+         <br><br>
+           <img src="static/images/img3.png"  alt="MY ALT TEXT" style="width: 50%; display: block; margin: auto;"/>
+         </p>
+         </h3>
+      </div>
+
+      <div class="item">
+        <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
+          Distribution of the YesBut Dataset
+          </h2>
+        <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
+        <p>
+          Distribution of the original 283 satirical images downloaded from Social Media based on different aspects of image content and annotated descriptions
+        <br><br>
+          <img src="static/images/YesBut_Distro.png"  alt="MY ALT TEXT" style="display: block; margin: auto;"/>
+        </p>
+        </h3>
+     </div>
+
+      <div class="item">
+         <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
+           Task - Satirical Image Detection
+           </h2>
+         <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
+         <p>
+          This is a binary classification task, where given an image, the model needs to predict whether the image is satirical or not.
+         <br><br>
+           <img src="static/images/satire_det_task.png"  alt="MY ALT TEXT" style="display: block; margin: auto;"/>
+         </p>
+         </h3>
+      </div>
+
+
+
+      <div class="item">
+         <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
+           Task - Satirical Image Understanding
+           </h2>
+         <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
+         <p>
+          Given a satirical image, we evaluate the model’s satire understanding capability in images by (1) prompting the model to generate a textual description of each subimage as input, using the prompt “Describe the image”. (2) prompting the model to generate the punchline in the image using the following prompt (referred to as “WHYFUNNY_PROMPT” hereafter)- “Why is this image funny/satirical?”.
+         <br><br>
+           <img src="static/images/satire_und_task.png"  alt="MY ALT TEXT" style="display: block; margin: auto;"/>
+         </p>
+         </h3>
+      </div>
+
+      <div class="item">
+        <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
+          Task - Satirical Image Completion
+          </h2>
+        <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
+        <p>
+          Given either the left or right sub-image having the style of a colorized sketch, the other sub-image needs to be chosen from two options, one having a 2D, and the other having a 3D stick figure style, such that the entire image so formed is meaningful and satirical.
+        <br><br>
+          <img src="static/images/satire_comp_task.png"  alt="MY ALT TEXT" style="display: block; margin: auto;"/>
+        </p>
+        </h3>
+     </div>      
+
+     <div class="item">
+      <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">
+        Results
+        </h2>
+      <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">
+      <p>
+       
+        <img src="static/images/YesBut_Results.jpg"  alt="MY ALT TEXT" style="display: block; margin: auto;"/>
+      </p>
+      </h3>
+   </div>           
+
+<!--      <div class="item">-->
+<!--         <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">-->
+<!--           Using Weird Images to Create V&L Tasks-->
+<!--           </h2>-->
+<!--         <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">-->
+<!--         <p>-->
+<!--         The WHOOPS! benchmark includes four tasks:-->
+<!--            <ol class="pr-2 pl-6">-->
+<!--              <li>A novel task of explanation-of-violation: generating a detailed explanation for what makes the image weird</li>-->
+<!--              <li>Generating a literal caption</li>-->
+<!--              <li>Distinguishing between detailed and underspecified captions</li>-->
+<!--             <li>Answering questions that test compositional understanding</li>-->
+<!--            </ol>-->
+<!--             <br><br>-->
+<!--           <img src="static/images/benchmarking.png"/>-->
+<!--         </p>-->
+<!--         </h3>-->
+<!--      </div>-->
+
+<!--      <div class="item">-->
+<!--         <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">-->
+<!--           Test Results for Explanation-of-violation-->
+<!--           </h2>-->
+<!--         <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">-->
+<!--           <p>Models significantly lag behind human performance. For example, on identification, the best end-to-end fine-tuned BLIP2 FlanT5-XXL model achieves at best 73%. For explanation, even the oracle model (which is given access to a ground-truth, human-authored description of the image) only achieves a performance of 68%, falling substantially short of human performance (95%). We also added auto-eval results that are correlated with the human-eval. These results indicate that our dataset provides a challenging benchmark for the development of next-generation vision-and-language models.</p>-->
+<!--         <p style="text-align:center;">-->
+<!--           <br><br>-->
+<!--           <img src="static/images/Tb1.png"  style="width: 80%; height: 80%"/>-->
+<!--         </p>-->
+<!--         </h3>-->
+<!--      </div>-->
+
+<!--      <div class="item">-->
+<!--        <h2 class="subtitle is-size-3-tablet has-text-weight-bold has-text-centered has-background-info-light mr-0 pt-3 pb-3">-->
+<!--           Test Results for Image Captioning, Cross-Modal Matching and Visual Question Answering-->
+<!--           </h2>-->
+<!--         <h3 class="subtitle is-size-4-tablet has-text-left pr-4 pl-4 pt-3 pb-3">-->
+<!--           <p>The zero-shot results highlight the strengths and weaknesses of each model. Zero-shot BLIP2 demonstrates a substantial improvement over the other models. But even the supervised models have significant room for improvement, especially in VQA (maximum BEM score is 57%) and image captioning-->
+<!--           </p>-->
+<!--         <p style="text-align:center;">-->
+<!--           <br><br>-->
+<!--           <img src="static/images/Tb2.png"  style="width: 80%; height: 80%"/>-->
+<!--         </p>-->
+<!--         </h3>-->
+<!--      </div>-->
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+
+
+
+<!-- Youtube video -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Paper video. -->
+      <h2 class="title is-3">Video Presentation</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="publication-video">
+            <!-- Youtube embed code here -->
+            <iframe src="https://www.youtube.com/embed/S7zJis8rEbw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End youtube video -->
+
+
+
+
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe  src="https://drive.google.com/file/d/1EpRSXUVqL4OovwEAtC235SpEJFPP1IJv/preview" width="100%" height="550">
+          </iframe>
+        
+      </div>
+    </div>
+  </section>
+
+
+<!-- Paper -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Paper</h2>
+
+      <iframe  src="https://arxiv.org/pdf/2409.13592" width="100%" height="550">
+          </iframe>
+        
+      </div>
+    </div>
+  </section>
+<!--End paper -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@inproceedings{nandy-etal-2024-yesbut,
+    title = "***{Y}es{B}ut***: A High-Quality Annotated Multimodal Dataset for evaluating Satire Comprehension capability of Vision-Language Models",
+    author = "Nandy, Abhilash  and
+      Agarwal, Yash  and
+      Patwa, Ashish  and
+      Das, Millon Madhur  and
+      Bansal, Aman  and
+      Raj, Ankit  and
+      Goyal, Pawan  and
+      Ganguly, Niloy",
+    editor = "Al-Onaizan, Yaser  and
+      Bansal, Mohit  and
+      Chen, Yun-Nung",
+    booktitle = "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2024",
+    address = "Miami, Florida, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.emnlp-main.937/",
+    doi = "10.18653/v1/2024.emnlp-main.937",
+    pages = "16878--16895",
+    abstract = "Understanding satire and humor is a challenging task for even current Vision-Language models. In this paper, we propose the challenging tasks of Satirical Image Detection (detecting whether an image is satirical), Understanding (generating the reason behind the image being satirical), and Completion (given one half of the image, selecting the other half from 2 given options, such that the complete image is satirical) and release a high-quality dataset ***YesBut***, consisting of 2547 images, 1084 satirical and 1463 non-satirical, containing different artistic styles, to evaluate those tasks. Each satirical image in the dataset depicts a normal scenario, along with a conflicting scenario which is funny or ironic. Despite the success of current Vision-Language Models on multimodal tasks such as Visual QA and Image Captioning, our benchmarking experiments show that such models perform poorly on the proposed tasks on the ***YesBut*** Dataset in Zero-Shot Settings w.r.t both automated as well as human evaluation. Additionally, we release a dataset of 119 real, satirical photographs for further research."
+}</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
